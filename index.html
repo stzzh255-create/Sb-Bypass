@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>Universal Link Resolver</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="panel">
+      <div class="logo">↗</div>
+      <p class="eyebrow">UNIVERSAL LINK TOOLS</p>
+      <h1>Link Resolver</h1>
+      <p class="intro">Periksa domain dan pengalihan HTTP biasa. Layanan dengan tugas iklan atau proteksi tetap mengikuti mekanisme resminya.</p>
+      <form id="form">
+        <label for="url">Masukkan link</label>
+        <input id="url" name="url" type="url" placeholder="https://example.com/..." maxlength="2048" required>
+        <button id="submit" type="submit">Periksa Link <span>→</span></button>
+      </form>
+      <div id="result" class="result" aria-live="polite" hidden></div>
+      <p class="foot">Jangan masukkan link pribadi yang memuat token, kode login, atau informasi rahasia.</p>
+    </section>
+    <footer>Universal Link Resolver · Demo aman</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

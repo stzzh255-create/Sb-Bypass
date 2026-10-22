@@ -1,0 +1,23 @@
+:root { color-scheme: dark; --bg:#0b1020; --panel:#131a2c; --line:#29334c; --text:#f4f7ff; --muted:#9ca9c3; --accent:#8b7cff; }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; font-family:system-ui,-apple-system,Segoe UI,sans-serif; background:radial-gradient(ellipse at top,#1a2450 0,transparent 55%),var(--bg); color:var(--text); display:grid; place-items:center; padding:24px; }
+.wrap { width:100%; max-width:620px; }
+.panel { background:rgba(19,26,44,.96); border:1px solid var(--line); border-radius:24px; padding:clamp(22px,5vw,42px); box-shadow:0 24px 90px #0006; }
+.logo { display:grid; place-items:center; width:48px; height:48px; border-radius:15px; background:#29234e; color:#c6beff; font-size:28px; }
+.eyebrow { margin:22px 0 8px; color:#b8afff; font-size:11px; letter-spacing:2px; font-weight:800; }
+h1 { margin:0; font-size:clamp(32px,8vw,46px); letter-spacing:-1.5px; }
+.intro { color:var(--muted); line-height:1.7; margin:12px 0 28px; }
+label { display:block; font-size:13px; font-weight:700; margin-bottom:9px; }
+input { width:100%; min-width:0; padding:15px; border:1px solid #38435f; border-radius:12px; background:#0c1221; color:var(--text); font:inherit; outline:none; }
+input:focus { border-color:var(--accent); box-shadow:0 0 0 3px #8b7cff25; }
+button { width:100%; margin-top:12px; padding:15px; border:0; border-radius:12px; background:var(--accent); color:white; font:inherit; font-weight:800; cursor:pointer; }
+button:disabled { opacity:.65; cursor:wait; }
+button span { float:right; }
+.result { margin-top:22px; padding:16px; border:1px solid var(--line); border-radius:14px; overflow-wrap:anywhere; line-height:1.65; }
+.result h2 { font-size:16px; margin:0 0 8px; }
+.result p { color:var(--muted); font-size:14px; }
+.result a { color:#c8c1ff; }
+.result ul { padding-left:20px; font-size:13px; }
+.status { display:inline-block; padding:4px 8px; border-radius:7px; background:#272b43; color:#d7d2ff; font-size:12px; font-weight:800; }
+.foot { color:#77839e; font-size:12px; line-height:1.6; margin:22px 0 0; }
+footer { text-align:center; color:#67738d; font-size:12px; padding:18px; }
